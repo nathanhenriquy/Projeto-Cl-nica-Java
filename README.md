@@ -8,6 +8,8 @@
 
 Possíveis Classes
 
+<b>main<b>
+
 <b>1 - Pessoa - Classe Abstrata<b>
 - nome: String
 - cpf: String
@@ -33,7 +35,7 @@ Possíveis Classes
 
 +gets e sets
 
-<b>5 - Trabalhador<b>
+<b>5 - Recepcionista<b>
 - matricula: String
 - cargo: String
 
@@ -87,8 +89,34 @@ implemntar o realizar pagamento
 +implemntar o realizar pagamento
 +implemntar o emetirRecibo();
 
-<b>13 - <b>
+<b>13 - Exames <b>
+- String tipoExame;
+- dataExame;
+- medicoResponsavel;
+- Paciente paciente;
+- String resultado;
 
-<b>14 - <b>
++agendarExame
++emitirResultado
 
-<b>15 - <b>
+
+<b>14 - Agendamento <b>
+- String dataAgendamento;
+- String horarioAgendamento;
+- Paciente paciente;
+- Medico medico;
+
++gets e sets
++verificarDisponiblidade
++confirmarAgendamento
+
+<b>15 - ReceitaMedica<b>
+
+- private medicamentos;
+- dosagem;
+- instrucoes;
+- dataEmissao;
+- medico;
+- paciente;
+
++imprimirReceita
