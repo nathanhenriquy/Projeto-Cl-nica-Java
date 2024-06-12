@@ -8,47 +8,87 @@
 
 Possíveis Classes
 
-<b>Pessoa - Classe Abstrata<b>
+<b>1 - Pessoa - Classe Abstrata<b>
 - nome: String
 - cpf: String
 - dataNascimento: String
 
++gets e sets
 
-<b>Paciente<b>
+
+<b>2 - Paciente<b>
 - nomePlano : String    
-- numeroCartaoPlano: String     
+- numeroCartaoPlano: String   
+
++gets e sets
            
-<b>Funcionário<b>
+<b>3 - Funcionário<b>
 -salario : double
 
-<b>Medico<b>                  
- - crm: String
-- especialidade: String
++gets e sets
 
-<b>Trabalhador<b>
+<b>4 - Medico<b>                  
+- crm: String
+- especialidade: especialidades
+
++gets e sets
+
+<b>5 - Trabalhador<b>
 - matricula: String
 - cargo: String
 
-<b>Consulta<b>
++gets e sets
+
+<b>6 - Consulta<b>
+- valor : double
 - dataConsulta: String
 - medico: Medico
 - paciente: Paciente
 
-<b>Endereço<b>
-String rua;
-String numero;
-String cidade;
-String estado;
-String cep;
++gets e sets
 
-<b>Pagamento (interface)<b>
-realizarPagamento():
-emitirRecibo(): 
+<b>7 - Endereço<b>
+- String rua;
+- String numero;
+- String cidade;
+- String estado;
+- String cep;
 
-<b>PagamentoCartao<b>        
++gets e sets
+
+<b>8 - Pagamento (interface)<b>
+- realizarPagamento():
+- emitirRecibo(): 
+
+
+
+<b>9 - PagamentoCartao<b>        
 - numeroCartao: String 
 - nomeTitular: String
 - dataValidade: String
 
-<b>PagamentoDinheiro<b>
++gets e sets
++implemntar o realizar pagamento
++implemntar o emetirRecibo();
+
+<b>10 - PagamentoDinheiro<b>
 - quantiaRecebida: double
+
++gets e sets
+implemntar o realizar pagamento
++implemntar o emetirRecibo();
+
+<b>11 - Especialidades <b>
+
+<b>12 - PagamentoPix <b>
+-Chave pix String;
+ 
++gets e sets
++implemntar o realizar pagamento
++implemntar o emetirRecibo();
+
+<b>13 - <b>
+
+<b>14 - <b>
+
+<b>15 - <b>
