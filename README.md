@@ -10,7 +10,7 @@ Possíveis Classes
 
 <b>main<b>
 
-<b>1 - Pessoa - Classe Abstrata<b>
+<b>1 - Pessoa - Classe Abstrata - GABRIEL<b>
 - nome: String
 - cpf: String
 - dataNascimento: String
@@ -18,30 +18,30 @@ Possíveis Classes
 +gets e sets
 
 
-<b>2 - Paciente<b>
+<b>2 - Paciente - PAULO<b>
 - nomePlano : String    
 - numeroCartaoPlano: String   
 
 +gets e sets
            
-<b>3 - Funcionário<b>
+<b>3 - Funcionário - NATHAN <b>
 -salario : double
 
 +gets e sets
 
-<b>4 - Medico<b>                  
+<b>4 - Medico - GABRIEL <b>                  
 - crm: String
 - especialidade: especialidades
 
 +gets e sets
 
-<b>5 - Recepcionista<b>
+<b>5 - Recepcionista - PAULO<b>
 - matricula: String
 - cargo: String
 
 +gets e sets
 
-<b>6 - Consulta<b>
+<b>6 - Consulta - NATHAN<b>
 - valor : double
 - dataConsulta: String
 - medico: Medico
@@ -49,7 +49,7 @@ Possíveis Classes
 
 +gets e sets
 
-<b>7 - Endereço<b>
+<b>7 - Endereço - GABRIEL<b>
 - String rua;
 - String numero;
 - String cidade;
@@ -58,13 +58,13 @@ Possíveis Classes
 
 +gets e sets
 
-<b>8 - Pagamento (interface)<b>
+<b>8 - Pagamento (interface) - PAULO<b>
 - realizarPagamento():
 - emitirRecibo(): 
 
 
 
-<b>9 - PagamentoCartao<b>        
+<b>9 - PagamentoCartao - NATHAN<b>        
 - numeroCartao: String 
 - nomeTitular: String
 - dataValidade: String
@@ -73,23 +73,23 @@ Possíveis Classes
 +implemntar o realizar pagamento
 +implemntar o emetirRecibo();
 
-<b>10 - PagamentoDinheiro<b>
+<b>10 - PagamentoDinheiro - GABRIEL<b>
 - quantiaRecebida: double
 
 +gets e sets
 implemntar o realizar pagamento
 +implemntar o emetirRecibo();
 
-<b>11 - Especialidades <b>
+<b>11 - Especialidades - PAULO <b>
 
-<b>12 - PagamentoPix <b>
+<b>12 - PagamentoPix - NATHAN<b>
 -Chave pix String;
  
 +gets e sets
 +implemntar o realizar pagamento
 +implemntar o emetirRecibo();
 
-<b>13 - Exames <b>
+<b>13 - Exames - GABRIEL<b>
 - String tipoExame;
 - dataExame;
 - medicoResponsavel;
@@ -100,7 +100,7 @@ implemntar o realizar pagamento
 +emitirResultado
 
 
-<b>14 - Agendamento <b>
+<b>14 - Agendamento - PAULO<b>
 - String dataAgendamento;
 - String horarioAgendamento;
 - Paciente paciente;
@@ -110,7 +110,7 @@ implemntar o realizar pagamento
 +verificarDisponiblidade
 +confirmarAgendamento
 
-<b>15 - ReceitaMedica<b>
+<b>15 - ReceitaMedica - NATHAN<b>
 
 - private medicamentos;
 - dosagem;
