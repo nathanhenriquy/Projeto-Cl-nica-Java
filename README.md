@@ -1,7 +1,7 @@
 # Projeto-Clinica-Java
 <p>Nathan - Conectado <p>
 
-<p>Paulo - <p>
+<p>Paulo - Conectado<p>
 
 <p>Gabriel - <p>
 
