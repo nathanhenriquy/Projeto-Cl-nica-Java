@@ -3,7 +3,7 @@
 
 <p>Paulo - Conectado<p>
 
-<p>Gabriel - <p>
+<p>Gabriel - Conectado<p>
 
 
 Possíveis Classes
