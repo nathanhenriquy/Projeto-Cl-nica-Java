@@ -36,4 +36,18 @@ public class Consulta {
     public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
     }
+
+    public void realizarConsulta() {
+        System.out.println("Paciente em consulta, aguarde o resultado...");
+
+        int tempoConsulta = 5000;
+
+        try {
+            Thread.sleep(tempoConsulta);
+        } catch (InterruptedException e) {
+            System.err.println("Consulta foi interrompida: " + e.getMessage());
+        }
+
+        
+    }
 }

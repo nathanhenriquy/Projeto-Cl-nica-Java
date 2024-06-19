@@ -1,9 +1,8 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 
-public class main {
+public class Main {
 
     private static ArrayList<Medico> medicos = new ArrayList<>();
     private static ArrayList<Agendamento> agendamentos = new ArrayList<>();
