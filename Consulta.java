@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Consulta {
     
     private double valor;
@@ -37,7 +40,10 @@ public class Consulta {
         this.paciente = paciente;
     }
 
-    public void realizarConsulta() {
+    public boolean realizarConsulta() { // apesar do metodo, retorna se o exame será marcado
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+    
         System.out.println("Paciente em consulta, aguarde o resultado...");
 
         int tempoConsulta = 5000;
@@ -48,6 +54,26 @@ public class Consulta {
             System.err.println("Consulta foi interrompida: " + e.getMessage());
         }
 
-        
+        int temp = random.nextInt();
+
+        if(temp > 0) {
+            System.out.println("Sua saúde está perfeita");
+        }
+        else if(temp < 0) {
+            System.out.println("Você está com um problema de saúde, deseja marcar um exame?\nDigite S para Sim e N para Não");
+            String op = scanner.nextLine();
+
+            if (op.equals("S") || op.equals("s")) {
+                scanner.close();
+                return true;
+            }
+            else if (op.equals("N") || op.equals("n")) {
+                scanner.close();
+                return false;
+            }
+        }
+
+        scanner.close();
+        return false;
     }
 }

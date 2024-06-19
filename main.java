@@ -24,7 +24,7 @@ public class Main {
             System.out.println("1. Cadastrar Paciente");
             System.out.println("2. Agendar Consulta");
             System.out.println("3. Verificar Disponibilidade");
-            System.out.println("4. Realizar Consulta");
+            System.out.println("4. Realizar Consulta"); 
             System.out.println("5. Gerar Receita Médica");
             System.out.println("6. Agendar Exame");
             System.out.println("7. Emitir Resultado do Exame");
@@ -43,7 +43,8 @@ public class Main {
                 
                     break;
                 case 4:
-                
+                // ATENÇÃO: o metodo realizarConsulta retorna true caso haja um interesse em marcar um exame
+                // e false caso nao queira marcar o exame
                     break;
                 case 5:
                 
