@@ -1,12 +1,12 @@
 import java.io.*;
 import java.util.*;
 
-
-public class Main {
+public class main {
 
     private static ArrayList<Medico> medicos = new ArrayList<>();
     private static ArrayList<Agendamento> agendamentos = new ArrayList<>();
     private static ArrayList<Exames> exames = new ArrayList<>();
+    private static ArrayList<Paciente> pacientes = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -16,7 +16,6 @@ public class Main {
         medicos.add(new Medico("Dr. Sla", "44444444444", "31/09/1995", "CRM004", "Ortopedia"));
         medicos.add(new Medico("Dr. Sla", "55555555555", "05/01/1995", "CRM005", "Pediatria"));
 
-
         Scanner leitor = new Scanner(System.in);
         int op;
 
@@ -24,7 +23,7 @@ public class Main {
             System.out.println("1. Cadastrar Paciente");
             System.out.println("2. Agendar Consulta");
             System.out.println("3. Verificar Disponibilidade");
-            System.out.println("4. Realizar Consulta"); 
+            System.out.println("4. Realizar Consulta");
             System.out.println("5. Gerar Receita Médica");
             System.out.println("6. Agendar Exame");
             System.out.println("7. Emitir Resultado do Exame");
@@ -34,26 +33,59 @@ public class Main {
 
             switch (op) {
                 case 1:
-                   
+                    System.out.println("\n\n");
+                    System.out.println("===== CADASTRO PACIENTE =====");
+                    System.out.print("Nome do paciente: ");
+                    String nome = leitor.nextLine();
+                    System.out.print("CPF do paciente: ");
+                    String cpf = leitor.nextLine();
+                    System.out.print("Data de nascimento do paciente: ");
+                    String dataNascimento = leitor.nextLine();
+                    System.out.println("\n");
+                    System.out.println("===== ENDEREÇO =====");
+                    System.out.print("Rua: ");
+                    String rua = leitor.nextLine();
+                    System.out.print("Número: ");
+                    String numero = leitor.nextLine();
+                    System.out.print("Cidade: ");
+                    String cidade = leitor.nextLine();
+                    System.out.print("Estado: ");
+                    String estado = leitor.nextLine();
+                    System.out.print("CEP: ");
+                    String cep = leitor.nextLine();
+                    System.out.println("\n");
+                    System.out.println("===== PLANO DE SAÚDE =====");
+                    System.out.print("Nome do plano: ");
+                    String nomePlano = leitor.nextLine();
+                    System.out.print("Número da carteirinha: ");
+                    String numeroCarteira = leitor.nextLine();
+
+                    Endereco endereco = new Endereco(rua, numero, cidade, estado, cep);
+                    Paciente paciente = new Paciente(nome, cpf, dataNascimento, nomePlano, numeroCarteira, endereco);
+                    pacientes.add(paciente);
+                    System.out.println("---> Paciente cadastrado!");
+                    System.out.println("\n");
+
                     break;
                 case 2:
-                    
+
                     break;
                 case 3:
-                
+
                     break;
                 case 4:
-                // ATENÇÃO: o metodo realizarConsulta retorna true caso haja um interesse em marcar um exame
-                // e false caso nao queira marcar o exame
+                    // ATENÇÃO: o metodo realizarConsulta retorna true caso haja um interesse em
+                    // marcar um exame
+                    // e false caso nao queira marcar o exame
                     break;
                 case 5:
-                
+
                     break;
                 case 6:
-                    
-                  break;
+
+                    break;
                 case 7:
-                
+
                     break;
                 case 8:
                     System.out.println("====> Saindo <====");
@@ -67,4 +99,5 @@ public class Main {
 
         leitor.close();
     }
+
 }
