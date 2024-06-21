@@ -1,13 +1,14 @@
 import java.io.*;
 import java.util.*;
 
-public class main {
+public class Main {
 
     private static ArrayList<Medico> medicos = new ArrayList<>();
     private static ArrayList<Agendamento> agendamentos = new ArrayList<>();
     private static ArrayList<Exames> exames = new ArrayList<>();
     private static ArrayList<Paciente> pacientes = new ArrayList<>();
-
+    private static Scanner leitor = new Scanner(System.in);
+    
     public static void main(String[] args) {
 
         medicos.add(new Medico("Dr. Gilmar", "11111111111", "24/04/1995", "CRM001", "Dentista"));
@@ -16,7 +17,7 @@ public class main {
         medicos.add(new Medico("Dr. Sla", "44444444444", "31/09/1995", "CRM004", "Ortopedia"));
         medicos.add(new Medico("Dr. Sla", "55555555555", "05/01/1995", "CRM005", "Pediatria"));
 
-        Scanner leitor = new Scanner(System.in);
+        //Scanner leitor = new Scanner(System.in);
         int op;
 
         do {
@@ -82,9 +83,11 @@ public class main {
 
                     break;
                 case 6:
+                    Exames.agendarExame(leitor);
 
                     break;
                 case 7:
+                    Exames.emitirResultadoExame(leitor);
 
                     break;
                 case 8:

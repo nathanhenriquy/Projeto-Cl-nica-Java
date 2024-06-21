@@ -1,4 +1,5 @@
 public class Agendamento{ 
+
     private String dataAgendamento;
     private String horarioAgendamento;
     private Paciente paciente;
