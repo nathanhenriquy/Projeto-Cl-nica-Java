@@ -73,7 +73,7 @@
 
 ## USO CHAT GPT
 
-<p>Nathan - </p> <br><br>
+<p>Nathan - Geração de médicos aleatorios. Ajuda na associação de pacientes e medicos a receita medica </p> <br><br>
 
 <p>Paulo - </p> <br><br>
 
