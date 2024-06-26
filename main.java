@@ -1,26 +1,19 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class main {
 
-    private static ArrayList<Medico> medicos = new ArrayList<>();
     private static ArrayList<Agendamento> agendamentos = new ArrayList<>();
     private static ArrayList<Exames> exames = new ArrayList<>();
-    private static ArrayList<Paciente> pacientes = new ArrayList<>();
     private static Scanner leitor = new Scanner(System.in);
-    
+
     public static void main(String[] args) {
 
-        medicos.add(new Medico("Dr. Gilmar", "11111111111", "24/04/1995", "CRM001", "Dentista"));
-        medicos.add(new Medico("Dr. Juliana", "22222222222", "45/02/1995", "CRM002", "Dermatologia"));
-        medicos.add(new Medico("Dr. Sla", "33333333333", "23/12/1995", "CRM003", "Neurologia"));
-        medicos.add(new Medico("Dr. Sla", "44444444444", "31/09/1995", "CRM004", "Ortopedia"));
-        medicos.add(new Medico("Dr. Sla", "55555555555", "05/01/1995", "CRM005", "Pediatria"));
-
-        //Scanner leitor = new Scanner(System.in);
+        MedicoController.pre_colocados();
         int op;
 
         do {
+            System.out.println("\n\n\n==== CLINICA =====");
             System.out.println("1. Cadastrar Paciente");
             System.out.println("2. Agendar Consulta");
             System.out.println("3. Verificar Disponibilidade");
@@ -28,12 +21,16 @@ public class Main {
             System.out.println("5. Gerar Receita Médica");
             System.out.println("6. Agendar Exame");
             System.out.println("7. Emitir Resultado do Exame");
-            System.out.println("8. Sair");
+            System.out.println("8. Listar Pacientes");
+            System.out.println("9. Buscar Paciente por CPF");
+            System.out.println("10. Listar Médicos");
+            System.out.println("11. Sair");
             System.out.print("Escolha uma opção: ");
             op = Integer.parseInt(leitor.nextLine());
 
             switch (op) {
                 case 1:
+
                     System.out.println("\n\n");
                     System.out.println("===== CADASTRO PACIENTE =====");
                     System.out.print("Nome do paciente: ");
@@ -55,7 +52,8 @@ public class Main {
                     System.out.print("CEP: ");
                     String cep = leitor.nextLine();
 
-                    // Paciente paciente = new Paciente(nome, cpf, dataNascimento, new Endereco(rua, numero, cidade, estado, cep));
+                    // Paciente paciente = new Paciente(nome, cpf, dataNascimento, new Endereco(rua,
+                    // numero, cidade, estado, cep));
                     // ArquivoPaciente.salvarPaciente(paciente);
 
                     System.out.println("\n");
@@ -67,12 +65,9 @@ public class Main {
 
                     Endereco endereco = new Endereco(rua, numero, cidade, estado, cep);
                     Paciente paciente = new Paciente(nome, cpf, dataNascimento, nomePlano, numeroCarteira, endereco);
-                    ArquivoPaciente.salvarPaciente(paciente);
-                    pacientes.add(paciente); // da pra tirar a lista de pacientes se colocar em arquivos
+                    ArquivoPaciente.adicionarPaciente(paciente);
                     System.out.println("---> Paciente cadastrado!");
-                    System.out.println("\n");
-
-                    
+                    System.out.println("\n\n");
 
                     break;
                 case 2:
@@ -82,22 +77,31 @@ public class Main {
 
                     break;
                 case 4:
-                    // ATENÇÃO: o metodo realizarConsulta retorna true caso haja um interesse em
-                    // marcar um exame
-                    // e false caso nao queira marcar o exame
+
                     break;
                 case 5:
 
                     break;
                 case 6:
                     Exames.agendarExame(leitor);
-
                     break;
                 case 7:
                     Exames.emitirResultadoExame(leitor);
-
                     break;
                 case 8:
+                    System.out.println("\n\n==== LISTA DE PACIENTES ==== ");
+                    ArquivoPaciente.listarPacientes();
+                    break;
+                case 9:
+                    System.out.println("\n\n==== BUSCA POR CPF ==== ");
+                    System.out.println("Digite o CPF do paciente:");
+                    String cpfbusca = leitor.nextLine();
+                    ArquivoPaciente.buscarPacientePorCpf(cpfbusca);
+                    break;
+                case 10:
+                    MedicoController.listarMedicos();
+                    break;
+                case 11:
                     System.out.println("====> Saindo <====");
                     break;
                 default:
@@ -105,9 +109,8 @@ public class Main {
                     break;
             }
 
-        } while (op != 8);
+        } while (op != 11);
 
         leitor.close();
     }
-
 }
