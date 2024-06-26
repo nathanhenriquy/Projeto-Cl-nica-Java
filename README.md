@@ -12,10 +12,9 @@
 ## CLASSES
 
 main<br>
-
 1 - Pessoa - Classe Abstrata - GABRIEL<br>
-<b>2 - Paciente - PAULO<b>
-<b>3 - Funcionário - NATHAN <b>
+<b>2 - Paciente - PAULO<b><br>
+<b>3 - Funcionário - NATHAN <b><br>
 <b>4 - Medico - GABRIEL <b>                  
 <b>5 - Recepcionista - PAULO<b>
 <b>6 - Consulta - NATHAN<b>
