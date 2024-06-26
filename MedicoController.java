@@ -14,8 +14,7 @@ public class MedicoController {
 
     
     public static void listarMedicos() {
-        System.out.println("\n\n===== LISTA DE MÉDICOS =====");
-        if (medicos.isEmpty()) {
+       if (medicos.isEmpty()) {
             System.out.println("Não há médicos cadastrados.");
         } else {
             for (int i = 0; i < medicos.size(); i++) {
@@ -25,7 +24,7 @@ public class MedicoController {
                 System.out.println("Data de Nascimento: " + medico.getDataNascimento());
                 System.out.println("CRM: " + medico.getCrm());
                 System.out.println("Especialidade: " + medico.getEspecialidade());
-                System.out.println("=============================");
+                System.out.println("\n\n");
             }
         }
     }

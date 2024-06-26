@@ -99,6 +99,7 @@ public class main {
                     ArquivoPaciente.buscarPacientePorCpf(cpfbusca);
                     break;
                 case 10:
+                    System.out.println("\n\n==== LISTA DE MEDICOS ==== ");
                     MedicoController.listarMedicos();
                     break;
                 case 11:
