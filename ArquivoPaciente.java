@@ -65,6 +65,7 @@ public class ArquivoPaciente {
         }
     }
     */
+    /* 
     public static Paciente buscarPacientePorCpf(String cpf) {
         ArrayList<Paciente> pacientes = lerPacientes();
         for (int i = 0; i < pacientes.size(); i++) {
@@ -74,6 +75,24 @@ public class ArquivoPaciente {
             }
         }
         System.out.println("Paciente não encontrado.");
+        return null;
+    }
+    */
+
+    public static String buscarPacientePorCpf(String cpf) {
+        try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
+            String linha;
+            while ((linha = br.readLine()) != null) {
+                if (!linha.trim().isEmpty()) {
+                    String[] dados = linha.split(",");
+                    if (dados.length > 1 && dados[1].equals(cpf)) {
+                        return linha;
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 

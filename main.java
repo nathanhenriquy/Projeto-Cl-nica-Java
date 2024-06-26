@@ -83,7 +83,7 @@ public class Main {
                     System.out.println("\n\n==== GERAR RECEITA MÉDICA ==== ");
                     System.out.println("Digite o CPF do paciente para gerar a receita:");
                     String cpfbusca0 = leitor.nextLine();                    
-                    Paciente pacienteEncontrado = ArquivoPaciente.buscarPacientePorCpf(cpfbusca0);
+                    String pacienteEncontrado = ArquivoPaciente.buscarPacientePorCpf(cpfbusca0);
 
                     if (pacienteEncontrado != null) {
                         
@@ -126,7 +126,14 @@ public class Main {
                     System.out.println("\n\n==== BUSCA POR CPF ==== ");
                     System.out.println("Digite o CPF do paciente:");
                     String cpfbusca = leitor.nextLine();
-                    ArquivoPaciente.buscarPacientePorCpf(cpfbusca);
+
+
+                    String pacienteTemp = ArquivoPaciente.buscarPacientePorCpf(cpfbusca);
+                    if (pacienteTemp != null) {
+                        System.out.println("Paciente encontrado: " + pacienteTemp);
+                    } else {
+                        System.out.println("Paciente com CPF " + cpfbusca + " não encontrado.");
+                    }
                     break;
                 case 10:
 
