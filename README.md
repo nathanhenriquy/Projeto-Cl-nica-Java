@@ -6,7 +6,7 @@
 <p>Gabriel - Conectado<p>
 
 
-<t1>Classes<t1>
+<title>Classes</title>
 
 <b>main<b>
 
