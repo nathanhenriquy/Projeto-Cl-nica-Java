@@ -5,6 +5,7 @@ public class Main {
 
     private static ArrayList<Agendamento> agendamentos = new ArrayList<>();
     private static ArrayList<Exames> exames = new ArrayList<>();
+  
     private static Scanner leitor = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -16,15 +17,14 @@ public class Main {
             System.out.println("\n\n\n==== CLINICA =====");
             System.out.println("1. Cadastrar Paciente");
             System.out.println("2. Agendar Consulta");
-            System.out.println("3. Verificar Disponibilidade");
-            System.out.println("4. Realizar Consulta");
-            System.out.println("5. Gerar Receita Médica");
-            System.out.println("6. Agendar Exame");
-            System.out.println("7. Emitir Resultado do Exame");
-            System.out.println("8. Listar Pacientes");
-            System.out.println("9. Buscar Paciente por CPF");
-            System.out.println("10. Listar Médicos");
-            System.out.println("11. Sair");
+            System.out.println("3. Realizar Consulta");
+            System.out.println("4. Gerar Receita Médica");
+            System.out.println("5. Agendar Exame");
+            System.out.println("6. Emitir Resultado do Exame");
+            System.out.println("7. Listar Pacientes");
+            System.out.println("8. Buscar Paciente por CPF");
+            System.out.println("9. Listar Médicos");
+            System.out.println("10. Sair");
             System.out.print("Escolha uma opção: ");
             op = Integer.parseInt(leitor.nextLine());
 
@@ -73,13 +73,16 @@ public class Main {
                 case 2:
 
                     break;
+                
                 case 3:
+                    
+                   
+
+                    
 
                     break;
+
                 case 4:
-
-                    break;
-                case 5:
                     System.out.println("\n\n==== GERAR RECEITA MÉDICA ==== ");
                     System.out.println("Digite o CPF do paciente para gerar a receita:");
                     String cpfbusca0 = leitor.nextLine();                    
@@ -94,23 +97,23 @@ public class Main {
                         Medico medicoSelecionado = MedicoController.medicos.get(numMedico - 1);
 
                         
-                        ReceitaMedica receita = ReceitaMedica.criarReceita(leitor, medicoSelecionado,
-                                pacienteEncontrado);
+                        ReceitaMedica receita = ReceitaMedica.criarReceita(leitor, medicoSelecionado, Paciente.fromString(pacienteEncontrado));
                         receita.imprimirReceita();
+
                     } else {
                         System.out.println("Paciente não encontrado.");
                     }
 
                     break;
-                case 6:
 
+                case 5:
                     Exames.agendarExame(leitor);
                     break;
-                case 7:
+                case 6:
 
                     Exames.emitirResultadoExame(leitor);
                     break;
-                case 8:
+                case 7:
 
                     System.out.println("\n\n==== LISTA DE PACIENTES ==== ");
                     ArquivoPaciente.listarPacientes();
@@ -121,7 +124,7 @@ public class Main {
                     }
                 
                     break;
-                case 9:
+                case 8:
 
                     System.out.println("\n\n==== BUSCA POR CPF ==== ");
                     System.out.println("Digite o CPF do paciente:");
@@ -135,12 +138,12 @@ public class Main {
                         System.out.println("Paciente com CPF " + cpfbusca + " não encontrado.");
                     }
                     break;
-                case 10:
+                case 9:
 
                     System.out.println("\n\n==== LISTA DE MEDICOS ==== ");
                     MedicoController.listarMedicos();
                     break;
-                case 11:
+                case 10:
 
                     System.out.println("====> Saindo <====");
                     break;
@@ -150,7 +153,7 @@ public class Main {
                     break;
             }
 
-        } while (op != 11);
+        } while (op != 10);
 
         leitor.close();
     }
