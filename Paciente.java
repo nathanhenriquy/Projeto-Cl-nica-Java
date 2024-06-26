@@ -32,5 +32,10 @@ public class Paciente extends Pessoa{
         this.numeroCarteiraPlano = numeroCarteiraPlano;
     }
 
+    @Override
+    public String toString() {
+        return getNome() + "," + getCpf() + "," + getDataNascimento() + "," + endereco.toString();
+    }
+
     
 }

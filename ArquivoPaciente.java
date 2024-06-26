@@ -6,13 +6,22 @@ public class ArquivoPaciente {
     private static final String FILE_NAME = "pacientes.txt";
     Scanner leitor = new Scanner(System.in);
 
+    public static void salvarPaciente(Paciente paciente) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
+            writer.write(paciente.toString());
+            writer.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
     public static void salvarPacientes(ArrayList<Paciente> pacientes) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_NAME))) {
             oos.writeObject(pacientes);
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    } 
 
     public static ArrayList<Paciente> lerPacientes() {
         ArrayList<Paciente> pacientes = new ArrayList<>();

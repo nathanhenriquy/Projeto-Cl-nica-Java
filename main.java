@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class main {
+public class Main {
 
     private static ArrayList<Agendamento> agendamentos = new ArrayList<>();
     private static ArrayList<Exames> exames = new ArrayList<>();
@@ -65,7 +65,7 @@ public class main {
 
                     Endereco endereco = new Endereco(rua, numero, cidade, estado, cep);
                     Paciente paciente = new Paciente(nome, cpf, dataNascimento, nomePlano, numeroCarteira, endereco);
-                    ArquivoPaciente.adicionarPaciente(paciente);
+                    ArquivoPaciente.salvarPaciente(paciente);
                     System.out.println("---> Paciente cadastrado!");
                     System.out.println("\n\n");
 
