@@ -11,9 +11,9 @@
 
 ## CLASSES
 
-<b>main<b>
+main<br>
 
-<b>1 - Pessoa - Classe Abstrata - GABRIEL<b>
+1 - Pessoa - Classe Abstrata - GABRIEL<br>
 <b>2 - Paciente - PAULO<b>
 <b>3 - Funcionário - NATHAN <b>
 <b>4 - Medico - GABRIEL <b>                  
