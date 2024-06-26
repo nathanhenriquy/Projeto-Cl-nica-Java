@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArquivoPaciente {
@@ -41,13 +42,29 @@ public class ArquivoPaciente {
         salvarPacientes(pacientes);
     }
 
+    public static List<String> listarPacientes() {
+        List<String> pacientes = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
+            String linha;
+            while ((linha = br.readLine()) != null) {
+                if (!linha.trim().isEmpty()) {
+                    pacientes.add(linha);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return pacientes;
+    }
+
+    /* 
     public static void listarPacientes() {
         ArrayList<Paciente> pacientes = lerPacientes();
         for (int i = 0; i < pacientes.size(); i++) {
             System.out.println(pacientes.get(i));
         }
     }
-
+    */
     public static Paciente buscarPacientePorCpf(String cpf) {
         ArrayList<Paciente> pacientes = lerPacientes();
         for (int i = 0; i < pacientes.size(); i++) {
@@ -59,4 +76,6 @@ public class ArquivoPaciente {
         System.out.println("Paciente não encontrado.");
         return null;
     }
+
+
 }

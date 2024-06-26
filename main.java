@@ -114,6 +114,12 @@ public class Main {
 
                     System.out.println("\n\n==== LISTA DE PACIENTES ==== ");
                     ArquivoPaciente.listarPacientes();
+
+                    List<String> pacientes = ArquivoPaciente.listarPacientes();
+                    for (String pacienteTemp : pacientes) {
+                        System.out.println(pacienteTemp);
+                    }
+                
                     break;
                 case 9:
 

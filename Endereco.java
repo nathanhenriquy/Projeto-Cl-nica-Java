@@ -58,5 +58,9 @@ public class Endereco {
     public String toString() {
         return rua + "," + numero + "," + cidade + "," + estado + "," + cep;
     }
+
+    public static Endereco fromString(String rua, String numero, String cidade, String estado, String cep) {
+        return new Endereco(rua, numero, cidade, estado, cep);
+    }
     
 }
