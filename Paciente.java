@@ -6,10 +6,9 @@ public class Paciente extends Pessoa{
     
     public Paciente(String nome, String cpf, String dataNascimento,String nomePlano, String numeroCarteiraPlano, Endereco endereco) {
         super(nome, cpf, dataNascimento);
-       this.nomePlano = nomePlano;
-       this.numeroCarteiraPlano = numeroCarteiraPlano;
-       this.endereco = endereco;
-
+        this.nomePlano = nomePlano;
+        this.numeroCarteiraPlano = numeroCarteiraPlano;
+        this.endereco = endereco;
     }
   
     public Endereco getEndereco() {

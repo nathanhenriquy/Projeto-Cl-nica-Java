@@ -54,6 +54,10 @@ public class Main {
                     String estado = leitor.nextLine();
                     System.out.print("CEP: ");
                     String cep = leitor.nextLine();
+
+                    // Paciente paciente = new Paciente(nome, cpf, dataNascimento, new Endereco(rua, numero, cidade, estado, cep));
+                    // ArquivoPaciente.salvarPaciente(paciente);
+
                     System.out.println("\n");
                     System.out.println("===== PLANO DE SAÚDE =====");
                     System.out.print("Nome do plano: ");
@@ -63,9 +67,12 @@ public class Main {
 
                     Endereco endereco = new Endereco(rua, numero, cidade, estado, cep);
                     Paciente paciente = new Paciente(nome, cpf, dataNascimento, nomePlano, numeroCarteira, endereco);
-                    pacientes.add(paciente);
+                    ArquivoPaciente.salvarPaciente(paciente);
+                    pacientes.add(paciente); // da pra tirar a lista de pacientes se colocar em arquivos
                     System.out.println("---> Paciente cadastrado!");
                     System.out.println("\n");
+
+                    
 
                     break;
                 case 2:
