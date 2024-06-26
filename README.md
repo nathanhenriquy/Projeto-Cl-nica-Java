@@ -14,45 +14,45 @@
 0 - main <br>
 <p>Menu do sistema e coleta de dados</p>
 
-1 - Pessoa - Classe Abstrata - GABRIEL<br>
+1 - Pessoa - Classe Abstrata - <br>
 <p>Variáveis</p>
 
-2 - Paciente - PAULO<br>
+2 - Paciente - <br>
 <p>Extend de Pessoa</p>
 
-3 - Funcionário - NATHAN<br>
+3 - Funcionário - <br>
 <p>Extend de Pessoa</p>
 
-4 - Medico - GABRIEL<br>  
+4 - Medico - <br>  
 <p>Extend de Pessoa</p>
 
-5 - Recepcionista - PAULO<br>
+5 - Recepcionista - <br>
 
-6 - Consulta - NATHAN<br>
+6 - Consulta - <br>
 <p>Chamados para realização da consulta</p>
 
-7 - Endereço - GABRIEL<br>
+7 - Endereço - <br>
 <p>Variaveis</p>
 
-8 - Pagamento (interface) - PAULO<br>
+8 - Pagamento (interface) - <br>
 
-9 - PagamentoCartao - NATHAN<br>      
+9 - PagamentoCartao - <br>      
 <p>Realiza pagamento e emiti receibo</p>
 
-10 - PagamentoDinheiro - GABRIEL<br>
+10 - PagamentoDinheiro - <br>
 <p>Realiza pagamento e emiti receibo</p>
 
-11 - Especialidades - PAULO<br>
+11 - Especialidades - <br>
 
-12 - PagamentoPix - NATHAN<br>
+12 - PagamentoPix - <br>
 <p>Realiza pagamento e emiti receibo</p>
 
-13 - Exames - GABRIEL<br>
+13 - Exames - <br>
 <p>Emeti resultado de exame e agenda exame</p>
 
-14 - Agendamento - PAULO<br>
+14 - Agendamento - <br>
 
-15 - ReceitaMedica - NATHAN<br>
+15 - ReceitaMedica - <br>
 <p>cria e imprimi receita medica</p>
 
 16 - Arquivo Paciente <br>
@@ -64,3 +64,9 @@
 18 - Cirurgia <br>
 
 ## USO CHAT GPT
+
+<p>Nathan - </p> <br><br>
+
+<p>Paulo - </p> <br><br>
+
+<p>Gabriel - </p> <br><br>
