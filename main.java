@@ -80,32 +80,59 @@ public class main {
 
                     break;
                 case 5:
+                    System.out.println("\n\n==== GERAR RECEITA MÉDICA ==== ");
+                    System.out.println("Digite o CPF do paciente para gerar a receita:");
+                    String cpfbusca0 = leitor.nextLine();                    
+                    Paciente pacienteEncontrado = ArquivoPaciente.buscarPacientePorCpf(cpfbusca0);
+
+                    if (pacienteEncontrado != null) {
+                        
+                        System.out.println("Selecione o médico para a receita:");
+                        MedicoController.listarMedicos();
+                        System.out.print("Escolha o número do médico: ");
+                        int numMedico = Integer.parseInt(leitor.nextLine());
+                        Medico medicoSelecionado = MedicoController.medicos.get(numMedico - 1);
+
+                        
+                        ReceitaMedica receita = ReceitaMedica.criarReceita(leitor, medicoSelecionado,
+                                pacienteEncontrado);
+                        receita.imprimirReceita();
+                    } else {
+                        System.out.println("Paciente não encontrado.");
+                    }
 
                     break;
                 case 6:
+
                     Exames.agendarExame(leitor);
                     break;
                 case 7:
+
                     Exames.emitirResultadoExame(leitor);
                     break;
                 case 8:
+
                     System.out.println("\n\n==== LISTA DE PACIENTES ==== ");
                     ArquivoPaciente.listarPacientes();
                     break;
                 case 9:
+
                     System.out.println("\n\n==== BUSCA POR CPF ==== ");
                     System.out.println("Digite o CPF do paciente:");
                     String cpfbusca = leitor.nextLine();
                     ArquivoPaciente.buscarPacientePorCpf(cpfbusca);
                     break;
                 case 10:
+
                     System.out.println("\n\n==== LISTA DE MEDICOS ==== ");
                     MedicoController.listarMedicos();
                     break;
                 case 11:
+
                     System.out.println("====> Saindo <====");
                     break;
                 default:
+
                     System.out.println("Opção inválida.");
                     break;
             }

@@ -39,14 +39,15 @@ public class ArquivoPaciente {
         }
     }
 
-    public static void buscarPacientePorCpf(String cpf) {
+    public static Paciente buscarPacientePorCpf(String cpf) {
         ArrayList<Paciente> pacientes = lerPacientes();
         for (int i = 0; i < pacientes.size(); i++) {
             if (pacientes.get(i).getCpf().equals(cpf)) {
                 System.out.println(pacientes.get(i));
-                return;
+                return null;
             }
         }
         System.out.println("Paciente não encontrado.");
+        return null;
     }
 }

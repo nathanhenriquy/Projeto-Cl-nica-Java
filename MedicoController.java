@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MedicoController {
 
-    private static ArrayList<Medico> medicos = new ArrayList<>();
+    public static ArrayList<Medico> medicos = new ArrayList<>();
 
     public static void pre_colocados() {
         medicos.add(new Medico("Dr. Gilmar", "11111111111", "24/04/1995", "CRM001", "Dentista"));
