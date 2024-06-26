@@ -8,6 +8,14 @@
 
 <p>Gabriel - Conectado<p>
 
+## Descrição
+<p>Esse projeto desenvolvido em java, é referente a uma clinica que realiza exames/consultas/cirurgias a pacientes que possuem plano</p><br><br>
+
+## Uso
+
+<p>Apenas executar a main que o menu irá aparecer para você</p><br><br>
+
+
 
 ## CLASSES
 
