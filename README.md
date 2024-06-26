@@ -11,7 +11,9 @@
 
 ## CLASSES
 
-main<br>
+0 - main <br>
+<p>Menu do sistema e coleta de dados</p>
+
 1 - Pessoa - Classe Abstrata - GABRIEL<br>
 <p>Variáveis</p>
 
@@ -52,5 +54,13 @@ main<br>
 
 15 - ReceitaMedica - NATHAN<br>
 <p>cria e imprimi receita medica</p>
+
+16 - Arquivo Paciente <br>
+<p>Coloca os pacientes em um arquivo lista os pacientes e busca por cpf</p>
+
+17 - Medico Controller <br>
+<p>Adição de medicos e listagem dos mesmos</p>
+
+18 - Cirurgia <br>
 
 ## USO CHAT GPT
