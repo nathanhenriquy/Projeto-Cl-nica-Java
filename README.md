@@ -71,7 +71,7 @@
 
 ## USO CHAT GPT
 
-<p>Nathan - Geração de médicos aleatorios. Ajuda na associação de pacientes e medicos a receita medica </p> <br><br>
+<p>Nathan - Geração de médicos aleatorios. Ajuda na associação de pacientes e medicos a receita medica. Ajuda no dias disponiveis para criar o array list ja em uso no codigo </p> <br><br>
 
 <p>Paulo - Busca de erros de lógica e auxílio no tratamento de excessões.</p> <br><br>
 

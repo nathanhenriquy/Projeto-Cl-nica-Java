@@ -115,7 +115,7 @@ public class Main {
 
                         agendamentos.add(agendamento);
 
-                        System.out.println("---> Consulta agendada com sucesso para " + dataAgendamento + " às "
+                        System.out.println("=== Consulta agendada com sucesso para " + dataAgendamento + " às "
                                 + horarioAgendamento);
                     } else {
                         System.out.println("Paciente não encontrado.");
