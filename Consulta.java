@@ -45,15 +45,15 @@
             Scanner scanner = new Scanner(System.in);
         
             System.out.println("Paciente em consulta, aguarde o resultado...");
-
-            int tempoConsulta = 5000;
-
+/* 
+            int tempoConsulta = 2500;
+            
             try {
                 Thread.sleep(tempoConsulta);
             } catch (InterruptedException e) {
                 System.err.println("Consulta foi interrompida: " + e.getMessage());
             }
-
+            */
             int temp = random.nextInt();
 
             if(temp > 0) {

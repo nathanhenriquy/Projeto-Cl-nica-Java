@@ -11,12 +11,16 @@ public class PagamentoPix implements Pagamento {
     }
 
     @Override
-    public void realizarPagamento() {
-        // dps faço
+    public void realizarPagamento(double valor, String nomePaciente, String dataConsulta) {
+        System.out.println("Pagamento de R$" + valor + " realizado via PIX.");
     }
 
     @Override
-    public void emitirRecibo() {
-       // dps faço
+    public void emitirRecibo(double valor, String nomePaciente, String dataConsulta) {
+        System.out.println("\n\n==== RECIBO ====");
+        System.out.println("Nome do Paciente: " + nomePaciente);
+        System.out.println("Data da Consulta: " + dataConsulta);
+        System.out.println("Valor: R$" + valor);
+        System.out.println("Método de Pagamento: PIX");
     }
 }

@@ -1,6 +1,5 @@
 public interface Pagamento {
-    
-    void realizarPagamento();
-    void emitirRecibo();
+    void realizarPagamento(double valor, String nomePaciente, String dataConsulta);
+    void emitirRecibo(double valor, String nomePaciente, String dataConsulta);
 
 }

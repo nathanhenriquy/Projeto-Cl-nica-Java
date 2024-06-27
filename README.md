@@ -75,6 +75,6 @@
 
 <p>Nathan - Geração de médicos aleatorios. Ajuda na associação de pacientes e medicos a receita medica </p> <br><br>
 
-<p>Paulo - </p> <br><br>
+<p>Paulo - Busca de erros de lógica e auxílio no tratamento de excessões.</p> <br><br>
 
-<p>Gabriel - </p> <br><br>
+<p>Gabriel - Busca de erros de lógica e ajuda na criação de MVC.</p> <br><br>

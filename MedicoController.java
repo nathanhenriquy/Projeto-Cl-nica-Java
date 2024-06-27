@@ -19,12 +19,13 @@ public class MedicoController {
         } else {
             for (int i = 0; i < medicos.size(); i++) {
                 Medico medico = medicos.get(i);
+                System.out.println("Medico: " + (i + 1));
                 System.out.println("Nome: " + medico.getNome());
                 System.out.println("CPF: " + medico.getCpf());
                 System.out.println("Data de Nascimento: " + medico.getDataNascimento());
                 System.out.println("CRM: " + medico.getCrm());
                 System.out.println("Especialidade: " + medico.getEspecialidade());
-                System.out.println("\n\n");
+                System.out.println("\n");
             }
         }
     }
