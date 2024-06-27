@@ -34,8 +34,6 @@
 4 - Medico - <br>  
 <p>Extend de Pessoa</p>
 
-5 - Recepcionista - <br>
-
 6 - Consulta - <br>
 <p>Chamados para realização da consulta</p>
 
